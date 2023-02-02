@@ -22,7 +22,7 @@ import com.qsp.trello.pomrepository.TrelloBoardPage;
 import com.qsp.trello.pomrepository.TrelloHomePage;
 
 public class TrelloEndToEnd extends BaseClass {
-
+//test
 	@Test
 	public void launchTrello() throws IOException
 	{
