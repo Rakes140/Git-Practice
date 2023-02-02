@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EndToEndSuite" >
+	<test name="VerifyTrelloHomepage" enabled="true">
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="verifyTrelloHomepage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="VerifyTrelloLoginpage" enabled="true">
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="homeLoginOptionClick" />
+					<include name="verifyLoginpage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="VerifyTrelloBoardpage" enabled="true" >
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="homeLoginOptionClick" />
+					<include name="login" />
+					<include name="verifyTrelloBoardpage" />
+					<include name="logout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="BoardCreationAndDeleteCreatedBoard" enabled="true">
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="homeLoginOptionClick" />
+					<include name="login" />
+					<include name="boardCreation" />
+					<include name="deleteCreatedBoard" />
+					<include name="logout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ListCreationInBoard" enabled="true">
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="homeLoginOptionClick" />
+					<include name="login" />
+					<include name="boardCreation" />
+					<include name="deleteList" />
+					<include name="createList" />
+					<include name="deleteCreatedBoard" />
+					<include name="logout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="CreatedListSwapInBoard" enabled="true">
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="homeLoginOptionClick" />
+					<include name="login" />
+					<include name="boardCreation" />
+					<include name="deleteList" />
+					<include name="createList" />
+					<include name="swapList" />
+					<include name="deleteCreatedBoard" />
+					<include name="logout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="CardSortAlphabeticaly" enabled="true">
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="homeLoginOptionClick" />
+					<include name="login" />
+					<include name="boardCreation" />
+					<include name="deleteList" />
+					<include name="createList" />
+					<include name="cardCreation" />
+					<include name="alphabeticallyCardSort" />
+					<include name="deleteCreatedBoard" />
+					<include name="logout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="CardCountVerification" enabled="true">
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="homeLoginOptionClick" />
+					<include name="login" />
+					<include name="boardCreation" />
+					<include name="deleteList" />
+					<include name="createList" />
+					<include name="cardCreation" />
+					<include name="cardCount" />
+					<include name="deleteCreatedBoard" />
+					<include name="logout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="CardListMoveFromOneBoardToAnotherBoard" enabled="true">
+		<classes>
+			<class name="com.qsp.trello.test.TrelloEndToEnd">
+				<methods>
+					<include name="launchTrello" />
+					<include name="homeLoginOptionClick" />
+					<include name="login" />
+					<include name="boardCreation" />
+					<include name="deleteList" />
+					<include name="createBoardFromBoardPage" />
+					<include name="createList" />
+					<include name="cardCreation" />
+					<include name="moveFullyLoadedList" />
+					<include name="deleteCreatedBoard" />
+					<include name="deleteBoardOnTrelloBoardPage"/>
+					<include name="logout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
